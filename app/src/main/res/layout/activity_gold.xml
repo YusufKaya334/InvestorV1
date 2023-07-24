@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gold">
+
+    <ListView
+        android:id="@+id/listviewdeneme1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/altinverisi2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/altin_al"
+        android:layout_width="104dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="55dp"
+        android:onClick="altinal"
+        android:text="ALTIN AL"
+        app:layout_constraintBottom_toBottomOf="@+id/altin_sat"
+        app:layout_constraintEnd_toStartOf="@+id/altin_sat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Button
+        android:id="@+id/altin_sat"
+        android:layout_width="126dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="altinsat"
+        android:text="ALTIN SAT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/altin_al"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="214dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Adet giriniz:"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/altin_sat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/altinverisi2" />
+
+    <TextView
+        android:id="@+id/altinverisi"
+        android:layout_width="107dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginEnd="55dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/altinverisi2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/altinverisi2" />
+
+    <TextView
+        android:id="@+id/altinverisi2"
+        android:layout_width="117dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/altinverisi"
+        app:layout_constraintTop_toBottomOf="@+id/listviewdeneme1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
